@@ -35,6 +35,7 @@ import java.lang.Runnable;
 import java.util.LinkedList;
 import java.util.Iterator;
 import java.net.MalformedURLException;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.text.NumberFormat;
 
@@ -56,6 +57,10 @@ public class LoaderSlaveMultiThreadMultiCL
 		}
 		try
 		{
+			System.out.println("Here");
+			System.out.println(Arrays.toString(args));
+			System.out.println(args[0]);
+			System.out.println(args[1]);
 			(new LoaderSlaveMultiThreadMultiCL()).run(args[0],Integer.parseInt(args[1]));
 		}
 		catch(Exception e)
